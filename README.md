@@ -54,7 +54,7 @@ Make sure you have the following installed:
 To clone the project, run:
 
 ```bash
-git clone https://github.com/your-username/xyz-payment.git
+git clone github.com/tonymuga/xyz-school-payment-system/xyz-payment.git
 cd xyz-payment
 ```
 
@@ -147,5 +147,3 @@ Here are the key endpoints exposed by the application:
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 --- 
-
-Copy this content to your `README.md` file. Make sure to adjust the GitHub URL and any other relevant details to fit your project.
