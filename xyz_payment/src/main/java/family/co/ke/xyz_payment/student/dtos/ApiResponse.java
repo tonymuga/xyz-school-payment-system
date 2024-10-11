@@ -7,7 +7,7 @@ import lombok.NoArgsConstructor;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class ValidationResponse {
+public class ApiResponse {
     private String status;
     private boolean isEnrolled;
     private String message;
