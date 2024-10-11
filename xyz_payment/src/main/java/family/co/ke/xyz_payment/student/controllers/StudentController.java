@@ -24,14 +24,14 @@ public class StudentController {
         this.studentService = studentService;
     }
 
-//    @Operation(summary = "Validate student enrollment status")
-//    @ApiResponses(value = {
-//            @ApiResponse(responseCode = "200", description = "Student is valid and enrolled",
-//                    content = @Content(mediaType = "application/json",
-//                            schema = @Schema(implementation = ApiResponse.class))),
-//            @ApiResponse(responseCode = "404", description = "Student not found or not enrolled",
-//                    content = @Content(mediaType = "application/json"))
-//    })
+    @Operation(summary = "Validate student enrollment status")
+    @ApiResponses(value = {
+            @ApiResponse(responseCode = "200", description = "Student is valid and enrolled",
+                    content = @Content(mediaType = "application/json",
+                            schema = @Schema(implementation = ApiResponse.class))),
+            @ApiResponse(responseCode = "404", description = "Student not found or not enrolled",
+                    content = @Content(mediaType = "application/json"))
+    })
     @PostMapping("/validate")
     public ResponseEntity<?> validateStudent(@RequestBody StudentRequest studentRequest) {
         boolean isEnrolled = studentService.isStudentEnrolled(studentRequest);
